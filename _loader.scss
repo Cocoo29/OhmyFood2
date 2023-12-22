@@ -1,0 +1,100 @@
+$primary-color: #ff7deb;
+$secondary-color: rgba(144, 0, 192, 0.61);
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background: linear-gradient($primary-color, $secondary-color);
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 0.3s 3.5s forwards;
+}
+
+  .word {
+    display: inline-block;
+    font-size: 48px;
+    color: yellow;
+    text-shadow: 3px 3px 3px black;
+    font-family: shrikhand, serif;
+  }
+
+  .word span {
+    display: inline-block;
+    animation: spin 3s;
+  }
+
+  .start-animation {
+    animation-delay: 0s !important;
+  }
+
+  .word span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .word span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .word span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .word span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+
+  .word span:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+
+  .word span:nth-child(6) {
+    animation-delay: 1s;
+  }
+
+  .word span:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+
+  .word span:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+
+  .end-animation {
+    animation-delay: 2.8s !important;
+    animation-fill-mode: forwards;
+  }
+
+.loader::after {
+  content: "";
+  tab-index: -1;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+  animation: disappear 0.01s 3.5s forwards;
+}
+
+.loader:not(:focus) {
+  display: none;
+}
+
+.loader  end-animation::after {
+  display: none;
+}

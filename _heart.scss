@@ -1,0 +1,33 @@
+$primary-color: rgb(243, 36, 198);
+$secondary-color: rgb(175, 10, 139);
+
+@keyframes fillHeart {
+    0% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+ .my-heart-full {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient($secondary-color, $primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .my-heart-full:hover {
+    opacity: 1;
+    background-position: 0 100%;
+    background-image: linear-gradient($secondary-color, $primary-color);
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fa-heart {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.2em;
+  }

@@ -1,0 +1,307 @@
+/* Styles de base pour les petits écrans (mobile first) */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#imgTitle {
+  padding-top: 30px;
+  font-size: 1rem;
+}
+
+  
+.introduction {
+  padding-top: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.introduction__title h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  white-space: pre-line;
+}
+
+.introduction__down-title p {
+  font-size: 2rem;
+}
+/* Style par défaut des icônes de cœur */
+.heart-label i.fa-regular {
+  display: inline-block; /* Afficher le cœur vide par défaut */
+}
+
+.heart-label i.fa-solid {
+  display: none; /* Masquer le cœur plein par défaut */
+}
+
+/* Déplacer les cœurs sous l'image à droite */
+.heart-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; /* Ajouter un curseur pour indiquer qu'il est cliquable */
+}
+
+/* Inverser la visibilité lorsqu'il est coché */
+.heart-checkbox:checked + .heart-label i.fa-regular {
+  display: none; /* Masquer le cœur vide lorsque coché */
+}
+
+.heart-checkbox:checked + .heart-label i.fa-solid {
+  display: inline-block; /* Afficher le cœur plein lorsque coché */
+}
+
+.functionning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.location-bar {
+  background-color: #f2f2f2;
+  border-top: 2px solid #999;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.location,
+.location input {
+  width: 100%;
+  margin-left: 0; /* Ajuster la marge si nécessaire */
+}
+
+.location input {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.location i {
+  margin-left: 0;
+}
+
+ 
+#button_restaurant {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 30px;
+  border: 2px solid #999;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50px;
+}
+.restaurants__card a {
+  display: block;
+  position: relative;
+}
+
+.restaurants__card a:hover .button_card {
+  display: block; /* Afficher le bouton lorsqu'on survole le lien */
+}
+.button_card {
+  position: relative;
+  /* Autres styles de .button_card ... */
+}
+
+.new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(95, 182, 131); /* Couleur de fond pour le span "new" (à ajuster selon vos besoins) */
+  color: green; /* Couleur du texte pour le span "new" (à ajuster selon vos besoins) */
+  padding: 5px; /* Espace intérieur pour le span "new" (à ajuster selon vos besoins) */
+  border-radius: 2px; /* Bord arrondi pour le span "new" (à ajuster selon vos besoins) */
+  display: none; /* Cacher le span "new" par défaut */
+}
+/* Afficher le span "new" en permanence */
+.button_card .new {
+  display: inline-block;   
+ margin-right: 60px;
+  margin-top: 30px;
+}
+/* Afficher le span "new" lors du survol de l'image ou du span */
+.restaurants__card img:hover + .button_card .new,
+.restaurants__card span:hover + .button_card .new {
+  display: inline-block;
+}
+.button {
+  background-color: #f2f2f2;
+  color: black;
+  border: none;
+  padding: 2px 15px;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: -25px;
+}
+
+.button i {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.button:hover {
+  background-color: #d9d9d9;
+}
+
+.button:hover i {
+  color: #9356DC;
+}
+.restaurants__card a {
+  pointer-events: none;
+}
+
+/* Activer les clics sur l'image */
+.restaurants__card img {
+  pointer-events: auto;
+}
+
+/* Afficher le bouton lors du survol de l'image */
+.restaurants__card img:hover + .button_card {
+  display: block;
+}
+
+.functionning__list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.functionning__list--number {
+  background-color: #9356DC;
+  color: #fff;
+  font-size: 0.8rem; /* Ajustez la taille du texte selon vos besoins */
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: -15px; /* Ajustez cette valeur pour régler le positionnement du numéro */
+}
+.restaurants__card {
+  margin: 20px;
+
+}
+.restaurants_image {
+  width: 91%;
+  margin-left: 35px;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+
+}
+.restaurant_descript {
+  background-color: white;
+    margin: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.restaurants_img {
+  width: 91%;
+ margin-left: 35px;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+
+  }
+.restaurants {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#restaurants_title{
+  margin-right: 10px;
+}
+#restaurant {
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  }
+
+
+
+  footer {
+    background-color: #333; /* Couleur de fond gris foncé */
+    color: white; /* Couleur du texte blanc */
+    padding: 20px; /* Ajoutez de la marge interne pour améliorer l'esthétique */
+  }
+  
+  .logo a img {
+    width: 30% /* Ajustez la largeur du logo selon vos besoins */
+   
+  }
+  
+  ul {
+    list-style: none; /* Supprimez les puces de la liste */
+    padding: 0; /* Supprimez la marge intérieure de la liste */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Ajoutez un espace entre chaque élément de la liste */
+  }
+  
+  a {
+    color: white; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimez la soulignement des liens */
+  }
+  
+  /* Effets au survol des liens */
+  a:hover {
+    text-decoration: underline; /* Ajoutez un soulignement au survol des liens */
+  }
+  
+/* Media query pour les écrans plus grands */
+
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 18px; /* Ajuster la taille de la police pour les écrans plus grands si nécessaire */
+  }
+  
+  .introduction,
+  .location-bar,
+  .functionning {
+      font-size: 3rem; /* Ajuster la taille du texte pour les écrans plus grands si nécessaire */
+  }
+}
+
+.homyfood {
+  color: white;
+  font-style: italic !important;
+  font-weight: bold;
+}
