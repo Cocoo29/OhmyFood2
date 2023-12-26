@@ -107,273 +107,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-body #container {
-  width: 100%;
-}
-body #container .title .head .logo {
-  padding-top: 2%;
-  font-size: 1.5rem;
-  text-align: center;
-}
-body #container .title .head .logo #imgTitle {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 5em;
-}
-body #container .title .location-bar {
-  background-color: #f5f5f5;
-  padding: 1%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-body #container .title .location-bar .location {
-  display: flex;
-  align-items: center;
-  margin-left: 15%;
-  font-size: 2em;
-}
-body #container .title .location-bar .location .fa-solid {
-  margin-right: 10px;
-}
-body #container .title .location-bar .location h1 {
-  margin-left: 20px;
-  font-size: 1.5rem;
-}
-body #container .introduction {
-  background-color: #f8f8f8;
-  padding: 2%;
-  text-align: center;
-}
-body #container .introduction .introduction__title {
-  text-align: center;
-  font-size: 2.5rem;
-}
-body #container .introduction .introduction__title h2 {
-  /* Ajoutez vos styles pour h2 */
-}
-body #container .introduction .introduction__down-title {
-  text-align: center;
-  font-size: 2rem;
-}
-body #container .introduction .introduction__down-title p {
-  font-size: 2rem;
-  color: black;
-  font-weight: 300;
-}
-body #container .introduction .button-restaurant button {
-  border-radius: 15px;
-  border: none;
-  width: 300px;
-  font-size: 1.2rem;
-  color: white;
-  font-weight: bold;
-  height: 50px;
-  padding: 6px 20px;
-  background: linear-gradient(#ff79da, #9356dc);
-}
-body #container .functionning h2 {
-  font-size: 2rem;
-  margin-left: 20px;
-  padding: 20px 0;
-}
-body #container .functionning ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-  margin-right: 5%;
-  margin-left: 10%;
-}
-body #container .functionning ul li {
-  width: 30%; /* largeur souhaitée pour chaque bouton */
-  display: inline-block; /* Pour que les boutons restent sur la même ligne */
-}
-body #container .functionning ul li .button {
-  position: relative;
-  background-color: #f2f2f2;
-  color: black;
-  border: none;
-  padding: 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  margin-bottom: 20px;
-  text-decoration: none;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.75);
-  justify-content: space-between;
-}
-body #container .functionning ul li .button .functionning__list--number {
-  background-color: #9356DC;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 20px;
-  margin-left: -30px;
-  margin-top: -10px;
-}
-body #container .functionning ul li .button .functionning__list--number i {
-  color: grey !important;
-  justify-content: space-between;
-}
-body #container .restaurants {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding: 10px;
-  overflow: hidden;
-}
-body #container .restaurants .restaurants_title {
-  font-size: 1.5rem;
-  margin-left: 15%;
-}
-body #container .restaurants .restaurants_title h2 {
-  font-size: 2rem;
-  display: flex;
-}
-body #container .restaurants .restaurants_container {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-body #container .restaurants .restaurants_container a {
-  text-decoration: none;
-  width: 48%;
-}
-body #container .restaurants .restaurants_container a .restaurants__card {
-  position: relative;
-  margin: 20px;
-  width: 100%;
   box-sizing: border-box;
-  display: inline-block;
 }
-body #container .restaurants .restaurants_container a .restaurants__card .restaurants_image {
-  width: 100%;
-  height: 250px;
-  max-height: 100%; /* Pour s'assurer que l'image conserve son aspect */
-  box-sizing: border-box;
-  flex-direction: column;
-  display: flex;
-  border-radius: 10px 10px 0 0;
-  object-fit: cover;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .New {
-  position: absolute;
-  top: 15px;
-  right: 0;
-  background-color: rgb(95, 182, 131);
-  color: green;
-  padding: 5px;
-  border-radius: 2px;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript {
-  margin-left: 15px;
-  background-color: white;
-  border-radius: 0 0 10px 10px;
-  padding-bottom: 10px;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
-  margin-right: 30px;
-  margin-left: 10px;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name h3 {
-  color: black;
-  text-decoration: none;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container {
-  position: relative;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container input.heart-checkbox {
-  display: none;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container input.heart-checkbox label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.5rem;
-  color: hotpink;
-  cursor: pointer;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container input.heart-checkbox i.fa-regular,
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container input.heart-checkbox i.fa-solid {
-  position: relative;
-  z-index: 2;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container:checked > label i.fa-regular {
-  display: none;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .restaurant_descript .restaurants_name .heart-container:checked > label i.fa-solid {
-  display: block;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .subtile_card {
-  font-weight: bold;
-  padding-bottom: 15px;
-  color: black;
-  text-decoration: none;
-}
-body #container .restaurants .restaurants_container a .restaurants__card .subtile_card p {
-  color: black;
-  text-decoration: none;
-}
-body footer {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-  padding-top: 30px;
-  width: 100%;
-  white-space: nowrap;
-}
-body footer .logo {
-  color: white;
-  order: 2;
-  font-family: "Shrikhand", cursive; /* Utilisation de la police Shrikhand */
-  font-style: italic; /* Style italic */
-  margin-right: 10px;
-}
-body footer .logo a {
-  color: white;
-  text-decoration: none;
-}
-body footer .logo a h2 {
-  margin-right: 15px;
-  font-size: 1.5rem;
-}
-body footer ul {
-  list-style: none;
-  display: flex;
-  padding-right: 10%;
-  order: 1;
-}
-body footer ul li a {
-  color: white;
-  text-decoration: none;
-}
-body footer ul li a h3 {
-  margin-left: 15px;
-  font-size: 1.2rem;
-}
-body footer ul li a .a-solid {
-  /* Styles for .a-solid if necessary */
-}
-
 body #container .banner {
   display: flex;
   flex-direction: row;
@@ -426,6 +161,9 @@ body #container .container .container_banner h2 {
   #container {
     font-family: "Roboto", sans-serif;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   #container .title {
     text-align: center;
@@ -552,7 +290,6 @@ body #container .container .container_banner h2 {
   #container .restaurants {
     background-color: #f2f2f2;
     width: 100%;
-    overflow: hidden;
   }
   #container .restaurants .restaurants_title {
     margin-right: 10px;
@@ -673,112 +410,105 @@ body #container .container .container_banner h2 {
   #container footer li a h3 .a-solid {
     /* Ajoutez du style au besoin */
   }
-  #container {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    max-width: 100%;
-  }
-  #container .banner {
+  body #container .banner {
     display: flex;
     flex-direction: row;
   }
-  #container .banner .banner_arrow {
+  body #container .banner .banner_arrow {
     width: 10%;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  #container .banner .banner_arrow a .fa-solid {
+  body #container .banner .banner_arrow a .fa-solid {
     margin-top: 45px;
     margin-left: 100px;
     font-size: 2em;
   }
-  #container .banner .logo {
+  body #container .banner .logo {
     width: 70%;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  #container .banner .logo a #imgTitle {
+  body #container .banner .logo a #imgTitle {
     padding-top: 30px;
     font-size: 1rem;
     margin-bottom: 10px;
     margin-left: 90px;
   }
-  #container .menu_prix {
+  body #container .menu_prix {
     z-index: -1;
     width: 100%;
     display: inline-block;
     position: absolute;
   }
-  #container .menu_prix .imgCook {
+  body #container .menu_prix .imgCook {
     width: 100%;
     height: 400px;
   }
-  #container .container {
+  body #container .container {
     z-index: 1;
     border-radius: 40px 40px 0 0;
     border: 1px solid white;
     background-color: #f2f2f2;
-    margin-top: 364px;
+    margin-top: 330px;
     padding: 20px 30px 20px 20px;
   }
-  #container .container .container_banner {
+  body #container .container .container_banner {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
     display: flex;
     align-items: center;
   }
-  #container .container .container_banner h2 {
+  body #container .container .container_banner h2 {
     font-style: italic;
     font-weight: 400;
     font-family: "Shrikhand", cursive;
     font-size: 3.5rem;
   }
-  #container .container .container_banner .heart-container {
+  body #container .container .container_banner .heart-container {
     margin-left: auto;
   }
-  #container .container .container_banner .heart-container .heart-label {
+  body #container .container .container_banner .heart-container .heart-label {
     display: flex;
     align-items: center;
   }
-  #container .container .container_banner .heart-container .heart-label .heart-checkbox {
+  body #container .container .container_banner .heart-container .heart-label .heart-checkbox {
     display: none; /* Hide the checkbox */
   }
-  #container .container .container_banner .heart-container .heart-label i {
+  body #container .container .container_banner .heart-container .heart-label i {
     font-size: 24px; /* Adjust the font size as needed */
     color: hotpink;
     cursor: pointer;
     transition: opacity 0.3s;
   }
-  #container .container .container_banner .heart-container .heart-label i:hover {
+  body #container .container .container_banner .heart-container .heart-label i:hover {
     opacity: 0.8;
   }
-  #container .container .container_banner .heart-container .heart-label .heart-checkbox:checked + i.fa-regular {
+  body #container .container .container_banner .heart-container .heart-label .heart-checkbox:checked + i.fa-regular {
     opacity: 0;
   }
-  #container .container .container_banner .heart-container .heart-label .heart-checkbox:checked + i.fa-solid {
+  body #container .container .container_banner .heart-container .heart-label .heart-checkbox:checked + i.fa-solid {
     opacity: 1;
   }
-  #container .menu {
+  body #container .menu {
     background-color: #f2f2f2;
     margin-top: -20px;
   }
-  #container .menu .menu__block {
+  body #container .menu .menu__block {
     margin: 10px;
   }
-  #container .menu .menu__block .category .category__name {
+  body #container .menu .menu__block .category .category__name {
     display: inline-block;
     position: relative;
     font-weight: 300;
     font-size: 1.2em;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 15px;
   }
-  #container .menu .menu__block .category .category__name:after {
+  body #container .menu .menu__block .category .category__name:after {
     content: "";
     position: absolute;
     left: 0;
@@ -786,60 +516,71 @@ body #container .container .container_banner h2 {
     width: 60%;
     height: 2px;
     background-color: rgb(95, 182, 131);
-    border-radius: 30px;
+    border-radius: 10px;
     display: block;
   }
-  #container .menu .menu__block .choice {
+  body #container .menu .menu__block .choice {
     margin: 5px;
   }
-  #container .menu .menu__block .choice .choice__card {
+  body #container .menu .menu__block .choice .choice__card {
     width: 97%;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 20px;
     display: flex;
   }
-  #container .menu .menu__block .choice .choice__card .choice__card__txt {
+  body #container .menu .menu__block .choice .choice__card .choice__card__txt {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    margin-right: 20px;
-    margin-left: 50px;
+    margin: 10px 33px 10px 17px;
+    width: 81%;
   }
-  #container .menu .menu__block .choice .choice__card .choice__card__txt .choice__card__txt--title {
+  body #container .menu .menu__block .choice .choice__card .choice__card__txt .choice__card__txt--title {
     font-size: 1.8rem;
     font-weight: bold; /* Ajout de la propriété pour mettre en gras */
   }
-  #container .menu .menu__block .choice .choice__card .choice__card__txt .choice__card__txt--description {
+  body #container .menu .menu__block .choice .choice__card .choice__card__txt .choice__card__txt--description {
     font-weight: 300;
     font-size: 1.5rem;
+    margin-top: -10px;
   }
-  #container .menu .menu__block .choice .choice__card .choice__card__price {
-    margin-left: auto;
+  body #container .menu .menu__block .choice .choice__card .choice__card__price {
     font-size: 1.5rem;
   }
-  #container .menu .menu__block .choice .choice__card .choice__card__check {
-    margin-top: 15%;
+  body #container .menu .menu__block .choice .choice__card .choice__card__check {
+    margin-top: 12%;
   }
-  #container footer {
+  body #container .menu .menu__block .button-restaurant button {
+    border-radius: 28px;
+    border: none;
+    width: 255px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    height: 55px;
+    padding: 6px 20px;
+    background: linear-gradient(#ff79da, #9356dc);
+  }
+  body #container footer {
     background-color: #333;
     color: white;
     display: flex;
     flex-direction: column;
   }
-  #container footer .logo a .footer-logo {
-    color: white;
+  body #container footer .logo a .footer-logo {
+    color: rgb(68, 67, 67);
     text-decoration: none;
   }
-  #container footer .logo a .footer-logo h2 {
+  body #container footer .logo a .footer-logo h2 {
     color: white;
   }
-  #container footer ul {
+  body #container footer ul {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
-  #container footer ul li a {
+  body #container footer ul li a {
     color: white;
     text-decoration: none;
   }
@@ -848,6 +589,7 @@ body #container .container .container_banner h2 {
   body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
   }
   body #container {
@@ -1096,6 +838,11 @@ body #container .container .container_banner h2 {
   }
   body footer ul li a h3 {
     margin-left: 12px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   body #container .banner {
     display: flex;
